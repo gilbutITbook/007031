@@ -16,7 +16,7 @@
 ## strcpy 관련 Visaul Studio 설정
 
 - `strcpy`는 Visual Studio에서 정상 동작하지 않습니다.
-- MS는 stack overflow 공격에 대한 우려로 `strcpy_s`를 추가로 제공하며 이는 C11 표준에 추가되었지만, 필수 사항이 아니라 옵션이라 일부 유닉스쪽 컴파일러에선 동작 하지 않습니다.
+- MS는 stack overflow 공격에 대한 우려로 `strcpy_s`를 추가로 제공합니다. 이는 C11 표준에 추가되었지만, 필수 사항이 아닌 옵션이라서 일부 유닉스 컴파일러에서는 동작하지 않습니다.
 - Visual Studio에서는 프로젝트 속성의 전처리기 항목에 `_CRT_SECURE_NO_WARNINGS`를 추가하면 해결됩니다. 
 - [_CRT_SECURE_NO_WARNINGS](https://github.com/gilbutITbook/007031/blob/master/_CRT_SECURE_NO_WARNINGS.png)를 참조하세요.
 
